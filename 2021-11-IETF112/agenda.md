@@ -9,7 +9,7 @@
 - Architecture document presentations - Ash Wilson - 30m
     - https://www.ietf.org/archive/id/draft-wilson-dance-architecture-00.txt
 - Solution documents - Shumon Huque - 30m
-    - https://datatracker.ietf.org/doc/html/draft-huque-dane-client-cert-06
-    - https://datatracker.ietf.org/doc/html/draft-huque-dane-client-cert-05
+    - https://datatracker.ietf.org/doc/html/draft-huque-dane-client-cert
+    - https://datatracker.ietf.org/doc/html/draft-huque-tls-dane-clientid
 - ...
 - AOB and closing - 10m
