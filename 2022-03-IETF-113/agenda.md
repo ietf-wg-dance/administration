@@ -5,11 +5,13 @@
 
 # DANCE agenda:
 
-- Chairs Introduction - 10m
-- Adoption call results and discussion - 15m
-    - Including TLS WG coordination
-- Architecture - 40m
-- Solution documents - 40m
+- Chairs Introduction                       (Joey and Wes)   - 10m
+    - WG activity level
+    - Adoption call results and discussion
+        - Including TLS WG coordination
+- Hackathon implementation results          (Sanoche Balakr)  - 20m
+- Architecture                              (Olle Johanss)    - 20m
+- Solution documents                        (Shumon Huque)    - 40m
 
 # Relevant documents:
 
