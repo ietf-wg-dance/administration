@@ -2,17 +2,20 @@
 
 - Friday, March 25, 2022 -- 10:00-12:00
 - Room: Park Suite 8
-- https://meetings.conf.meetecho.com/ietf113/?group=dance&short=&item=1
+
+- Virtual: https://meetings.conf.meetecho.com/ietf113/?group=dance&short=&item=1
+- Notes:   https://notes.ietf.org/notes-ietf-113-dance
 
 # DANCE agenda:
 
-- Chairs Introduction                       (Joey and Wes)   - 10m
+- Chairs Introduction                       (Joey and Wes)    - 10m
     - WG activity level
     - Adoption call results and discussion
         - Including TLS WG coordination
 - Hackathon implementation results          (Sanoche Balakr)  - 20m
 - Architecture                              (Olle Johanss)    - 20m
 - Solution documents                        (Shumon Huque)    - 40m
+- Closing and Next Steps                    (Joey and Wes)    - 10m
 
 # Relevant documents:
 
