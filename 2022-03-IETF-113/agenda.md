@@ -12,7 +12,7 @@
     - WG activity level
     - Adoption call results and discussion
         - Including TLS WG coordination
-- 20m - Hackathon implementation results          (Sanoche Balakr)
+- 20m - Hackathon implementation results          (Gaël and Sanoche)
 - 20m - Architecture                              (Olle Johanss)
 - 40m - Solution documents                        (Shumon Huque)
 - 10m - Closing and Next Steps                    (Joey and Wes)
