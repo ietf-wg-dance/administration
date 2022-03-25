@@ -1,6 +1,6 @@
 # Meeting information
 
-- Friday, March 25, 2022 -- 10:00-12:00
+- Friday, March 25, 2022 -- 10:00-12:00 (09:00-11:00 UTC)
 - Room: Park Suite 8
 
 - Virtual: https://meetings.conf.meetecho.com/ietf113/?group=dance&short=&item=1
@@ -15,6 +15,7 @@
 - 20m - Hackathon implementation results          (Gaël and Sanoche)
 - 20m - Architecture                              (Olle Johanss)
 - 40m - Solution documents                        (Shumon Huque)
+- 20m - Open mic
 - 10m - Closing and Next Steps                    (Joey and Wes)
 
 # Relevant documents:
@@ -26,5 +27,5 @@
 # How to DANCE:
 
 - general info: https://datatracker.ietf.org/wg/dance/about/
-- meeting materials: https://datatracker.ietf.org/meeting/112/session/dance
+- meeting materials: https://datatracker.ietf.org/meeting/113/session/dance
 - mailing list: https://www.ietf.org/mailman/listinfo/dance
