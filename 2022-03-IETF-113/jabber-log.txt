@@ -1,0 +1,66 @@
+Olle Johansson
+Good morning dancers!01:59:39
+Christian Veenman
+Good morning!02:00:33
+Paul Muchene
+Hello!02:00:44
+Robin Wilton
+Either way, I'm really impressed by those joining from antisocial timezones! Thanks for making it!02:01:14
+Olle Johansson
+I like this time zone too02:01:18
+David Lawrence
+yawn. and a half.02:01:30
+Jim Fenton
+zzzz02:01:38
+Robin Wilton
+mmmm shiny02:02:09
+Suzanne Woolf
+DANCE needs a theme song....new datatracker feature!02:03:31
+Robin Wilton
+Bowie - "Let's Dance"?02:03:53
+(or did Let's Encrypt already mess that up for us?)02:04:12
+Olle Johansson
+Introduce yourself by name before speaking in the room :-)02:04:21
+S/ietf-dane/ietf-dance/02:06:44
+Tim Wicinski
+Who is at the mic?02:14:54
+(not Shumon in the room)02:15:03
+Wes Hardaker
+hannes02:15:06
+Tim Wicinski
+thx02:15:47
+Sandoche Balakrichenan
+@hannes.. can cryptographic keys be fragmented?02:19:40
+Wes Hardaker
+answered was "yes but slow"02:20:11
+Olle Johansson
+Good presentation. Thanks!02:30:55
+Typical...02:31:52
+Sorry, got to switch browser. Back soon. Someone else start.02:33:06
+Jim Fenton
+Is there a reason the architecture document hasn't been adopted?02:46:31
+Thanks; I see that there are sections missing currently.02:48:38
+Pete Resnick
++1 to Barry.02:49:02
+Tim Wicinski
++1 to Barry02:49:10
+Shumon Huque
+I agree with Barry.02:49:15
+Paul Muchene
++102:49:28
+Jim Fenton
++102:49:29
+Jim Reid
+just adopt it02:49:54
+Robin Wilton
+Excellent - thanks everyone; good session.02:51:06
+Joey Salazar
+thank you all!02:51:14
+Olle Johansson
+thank you wes!02:51:16
+Paul Muchene
+Thanks Wes!02:51:21
+Tim Wicinski
+thanks all02:51:36
+Wes Hardaker
+:-)
