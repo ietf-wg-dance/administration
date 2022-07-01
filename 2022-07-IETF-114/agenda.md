@@ -1,6 +1,6 @@
 # Meeting information
 
-- TBD: Friday, July 29, 2022 -- 10:00-12:00
+- TBD: Friday, July 29, 2022 -- 13:30-14:30
 - Room: ???
 
 - Virtual: https://meetings.conf.meetecho.com/ietf114/?group=dance&short=&item=1
@@ -8,16 +8,16 @@
 
 # DANCE agenda:
 
-- 10m - Chairs Introduction                       (Joey and Wes)
+- 5m - Chairs Introduction                       (Joey and Wes)
     - DANCE architecture was adopted
     - Architecture document has a new editor (Ash -> Anthony Cook)
 - 15m - DANCE use case 1 - Jacques Latour (CIRA)
-- 15m - DANCE use case 2 - Bob Mos (DRIP)
+- 15m - DANCE use case 2 - Bob Moskowitz (DRIP)
 - 20m - Next steps
    - TLS Extension document
    - DANCE protocol
    - Architecture document
-- 10m - Open mic
+- 5m - Open mic
 
 # Relevant documents:
 
