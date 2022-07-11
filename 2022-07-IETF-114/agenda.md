@@ -11,12 +11,12 @@
 - 5m - Chairs Introduction                       (Joey and Wes)
     - DANCE architecture was adopted
     - Architecture document has a new editor (Ash -> Anthony Cook)
-- 15m - DANCE use case 1 - Jacques Latour (CIRA)
-- 15m - DANCE use case 2 - Bob Moskowitz (DRIP)
-- 20m - Next steps
+- 20m - Current work items
    - TLS Extension document
    - DANCE protocol
    - Architecture document
+- 15m - DANCE use case 1 - Jacques Latour (CIRA)
+- 15m - DANCE use case 2 - Bob Moskowitz (DRIP)
 - 5m - Open mic
 
 # Relevant documents:
