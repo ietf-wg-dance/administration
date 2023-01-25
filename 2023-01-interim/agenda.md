@@ -8,8 +8,8 @@
 # DANCE agenda:
 
 - 5m - Chairs Introduction                       (Wes and Joey)
-- 30m - Architecture document                    (Olle and Michael)
 - 10m - DANCE templates
+- 30m - Architecture document                    (Olle and Michael)
 - 15m - Open mic
 
 # Relevant documents:
