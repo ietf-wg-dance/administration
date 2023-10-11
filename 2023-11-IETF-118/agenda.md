@@ -9,8 +9,7 @@
   - note taker needed
 - 10m - DANCE Documents going forward            (Wes and Joey)
 - 20m - 
-- 10m - future of DANCE                          (Wes and Joey)
-- 15m - Open mic
+- 10m - future of DANCE / Open MIC               (Wes and Joey)
 
 # Relevant documents:
 
