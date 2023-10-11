@@ -8,7 +8,7 @@
 - 5m - Chairs Introduction                       (Wes and Joey)
   - note taker needed
 - 10m - DANCE Documents going forward            (Wes and Joey)
-- 20m - 
+- 20m - IOT authentication in AfNIC              (Gaël Berthaud-Muller)
 - 10m - future of DANCE / Open MIC               (Wes and Joey)
 
 # Relevant documents:
