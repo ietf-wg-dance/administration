@@ -1,0 +1,180 @@
+* Background
+
+*** Last Call Comments from *draft-ietf-dance-tls-clientid*
+
+    - A number of comments received
+    - Some discussion on the list
+    - Mostly radio silence afterward
+
+*** Last Call Comments from *draft-ietf-dance-client-auth*
+
+    - A number of comments received
+    - Some discussion on the list
+    - Mostly radio silence afterward
+
+*** Goal today
+
+    - Goal: Resolve these finally with mic discussion
+    - Discussion structure:
+      - We describe the comment
+      - We propose a "Suggestion" path forward based on the
+        comment/discussion to date
+      - You talk
+      - We take consensus
+    - DANCE!
+    - (and we verify the results on the list)
+
+* Last call comments about draft-ietf-dance-tls-clientid
+
+*** LC comments
+
+    + resolving LC comments for *draft-ietf-dance-tls-clientid*
+
+*** The draft SHOULD say what RR content it expects
+
+    \commentfrom{Robert Moskowitz}
+
+    \notes
+    + Interpretation: DANE has multiple usage/etc models now, should
+      we specify which are usable in this context?
+
+    \suggestion{drop this suggestion as it adds more strictness than is necessary.  Disagreement about whether or not this should go into this document vs a more specific one if needed.}
+    
+
+*** Needs a check regarding the supported TLS version
+
+    \commentfrom{Michael Richardson}
+
+
+    \notes
+    - We have a reference to TLS 1.2 and 1.3 and DTLS 1.3
+    - We have a reference to RFC8446 (framing extension)
+
+    \suggestion{Not needed: a reference to RFC6066 (TLS extensions)}
+
+*** Request for clarity on the ClientName limit definition
+
+    \commentfrom{Rick van Rein and Michael Richardson}
+
+    \notes
+    - dane_clientid extensions defined as <1..255>
+    - TLS encodes names as ascii
+    - DNS encodes them as 255 character limit names
+      - (with a trailing dot/null indicating the root zone)
+
+    The decode_error alert and a closedown of the connection when using
+    empty dane_clientid extensions defined as <1..255>
+
+    - We require ClientName to be non-empty
+    - Do we ever need to require an extension with a zero-length ClientName?
+
+    \suggestion{ensure the text properly shows the difference between the TLS length required vs the DANE request length required.}
+
+*** Use case for mixed environments in terms of certificate_authorities
+
+    \commentfrom{Rick van Rein?}
+
+    \notes
+    - Use case for mixed environments in terms of certificate_authorities
+
+    Suggestion: TBD
+
+*** Use stiffer requirements
+
+    \commentfrom{Rick van Rein and Michael Richardson}
+
+
+    \notes
+    - More stiff requirements suggested in order to improve
+      interoperability and reduce code complexity
+    - "When using X.509 certificate authentication, it SHOULD send
+      this extension."
+
+    \suggestion{SHOULD -> MUST}
+
+* Last call comment discussion: draft-ietf-dance-client-auth
+
+*** Comments on
+
+    + switching to *draft-ietf-dance-client-auth*
+
+*** Examples needed
+
+    \commentfrom{Rick van Rein}
+
+    \notes
+    - could use examples for:
+      - domain names
+      - wildcards and DANE-TA
+
+    \suggestion{Add an easy example /or/ point to architecture document}
+
+*** Encoding the transport label
+
+    \commentfrom{Michael Richardson}
+    
+    \notes
+    - consider the potential need to encode the transport label
+
+    \suggestion{}
+
+*** clarity on the security considerations from RFCs 6698 and 7671
+
+    \commentfrom{Michael Richardson}
+
+    \notes
+    - better security considerations sections
+    - (see RFCs 6698 and 7671)
+
+    \suggestion{}
+
+*** X.509 certificates should be a MUST
+
+    \commentfrom{Michael Richardson}
+
+    \notes
+    - Why is there an exception that allows for SHOULD when using
+      X.509 certificate
+
+    \suggestion{Change it to MUST}
+
+*** Nits
+
+    \commentfrom{Michael Richardson}
+
+    \notes
+    - Smaller wording suggestions and nits IRT DNSSEC validation,
+      distinction between TLS and DTLS, [_service] and device
+      notation, references for both RFCs and inactive drafts
+
+    \suggestion{Accept the nits}
+
+#+TITLE:     DANCE Last Call(s) Discussion @ IETF-118
+#+AUTHOR:    Joey Salazar and Wes Hardaker
+#+DESCRIPTION: 
+#+KEYWORDS: 
+#+LANGUAGE:  en
+#+OPTIONS:   H:2 num:t toc:t \n:nil @:t ::t |:t ^:nil -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+INFOJS_OPT: view:nil toc:t ltoc:t mouse:underline buttons:0 path:http://orgmode.org/org-info.js
+#+EXPORT_SELECT_TAGS: export
+#+EXPORT_EXCLUDE_TAGS: noexport
+#+LINK_UP:   
+#+LINK_HOME: 
+
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+latex_header: \usepackage[dvipsnames]{xcolor}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{amsmath}
+#+latex_header: \newcommand{\figcatchmentscale}{0.6}
+#+latex_header: \usetikzlibrary{arrows,positioning,shapes}
+#+latex_header: \usetikzlibrary{shapes,calc,shadows}
+#+latex_header: \setbeamertemplate{footline}[frame number]
+#+latex_header: \setbeamertemplate{footline}[text line]{\insertshortauthor \hfill \insertshorttitle \hfill \insertframenumber / \inserttotalframenumber }
+#+latex_header: \setbeamercolor{alerted text}{fg=blue}
+#+latex_header: \newcommand{\commentfrom}[1]{\textbf{Comment From:} #1}
+#+latex_header: \newcommand{\notes}{\vspace*{1em}\textbf{Notes:}}
+#+latex_header: \newcommand{\suggestion}[1]{\vspace*{1em}\textbf{Suggestion:} {#1}\\}
+#+BEAMER_HEADER: \setbeamertemplate{navigation symbols}{}
+
