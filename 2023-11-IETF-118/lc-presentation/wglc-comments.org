@@ -95,17 +95,6 @@
 
     + resolving LC comments for *draft-ietf-dance-tls-clientid*
 
-*** The draft SHOULD say what RR content it expects
-
-    \commentfrom{Robert Moskowitz}
-
-    \notes
-    + Interpretation: DANE has multiple usage/etc models now, should
-      we specify which are usable in this context?
-
-    \suggestion{drop this suggestion as it adds more strictness than is necessary.  Disagreement about whether or not this should go into this document vs a more specific one if needed.}
-    
-
 *** Needs a check regarding the supported TLS version
 
     \commentfrom{Michael Richardson}
@@ -137,15 +126,6 @@
 
     \suggestion{ensure the text properly shows the difference between the TLS length required vs the DANE request length required.}
 
-*** Use case for mixed environments in terms of certificate_authorities
-
-    \commentfrom{Rick van Rein?}
-
-    \notes
-    - Use case for mixed environments in terms of certificate_authorities
-
-    \suggestion{???}
-
 *** Use stiffer requirements
 
     \commentfrom{Rick van Rein and Michael Richardson}
@@ -157,6 +137,25 @@
       this extension."
 
     \suggestion{SHOULD -> MUST}
+
+*** The draft SHOULD say what RR content it expects
+
+    \commentfrom{Robert Moskowitz}
+
+    \notes
+    + Interpretation: DANE has multiple usage/etc models now, should
+      we specify which are usable in this context?
+
+    \suggestion{drop this suggestion as it adds more strictness than is necessary.  Disagreement about whether or not this should go into this document vs a more specific one if needed.}
+    
+*** Use case for mixed environments in terms of certificate_authorities
+
+    \commentfrom{Rick van Rein?}
+
+    \notes
+    - Use case for mixed environments in terms of certificate_authorities
+
+    \suggestion{???}
 
 #+TITLE:     DANCE Last Call(s) Discussion @ IETF-118
 #+AUTHOR:    Joey Salazar and Wes Hardaker
