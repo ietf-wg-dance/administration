@@ -26,6 +26,69 @@
     - DANCE!
     - (and we verify the results on the list)
 
+* Last call comment discussion: draft-ietf-dance-client-auth
+
+*** Comments on
+
+    + Resolving LC comments about *draft-ietf-dance-client-auth*
+
+*** Examples needed
+
+    \commentfrom{Rick van Rein}
+
+    \notes
+    - could use examples for:
+      - domain names
+      - wildcards and DANE-TA
+
+    \suggestion{Volunteer needed to add an easy example}\\
+    \suggestion{/or/ point to architecture document?}
+    \suggestion{/or/ point to use-cases document?}
+
+*** Encoding the transport label
+
+    \commentfrom{Michael Richardson}
+    
+    \notes
+    - The transport label encoding may not be needed,
+    - both TLS and DTLS are functionally dual-usable already
+    - the current draft already says the transport label is not needed
+
+    \suggestion{leave as is}
+
+*** clarity on the security considerations
+
+    \commentfrom{Robert Moskowitz}
+
+    \notes
+    - Are there privacy concerns because of client identity harvesting
+      in DANCE?
+    - do we need a better security consideration section description?
+
+    \suggestion{Mention this consideration in the secruity consideration}
+
+*** X.509 certificates should be a MUST
+
+    \commentfrom{Michael Richardson}
+
+    \notes
+    - Why is there an exception that allows for SHOULD when using
+      X.509 certificate
+
+    \suggestion{Change it to MUST}
+
+*** Nits
+
+    \commentfrom{Michael Richardson}
+
+    \notes
+    - Smaller wording suggestions and nits IRT DNSSEC validation,
+      distinction between TLS and DTLS, [_service] and device
+      notation, references for both RFCs and inactive drafts
+    - Message-ID: 763667.1668330590@dyas
+
+    \suggestion{Accept and act on the nits}
+
 * Last call comments about draft-ietf-dance-tls-clientid
 
 *** LC comments
@@ -94,68 +157,6 @@
       this extension."
 
     \suggestion{SHOULD -> MUST}
-
-* Last call comment discussion: draft-ietf-dance-client-auth
-
-*** Comments on
-
-    + switching to *draft-ietf-dance-client-auth*
-
-*** Examples needed
-
-    \commentfrom{Rick van Rein}
-
-    \notes
-    - could use examples for:
-      - domain names
-      - wildcards and DANE-TA
-
-    \suggestion{Volunteer needed to add an easy example}
-    \suggestion{/or/ point to architecture document?}
-    \suggestion{/or/ point to use-cases document?}
-
-*** Encoding the transport label
-
-    \commentfrom{Michael Richardson}
-    
-    \notes
-    - The transport label encoding may not be needed,
-    - both TLS and DTLS are functionally dual-usable already
-
-    \suggestion{leave as is}
-
-*** clarity on the security considerations from RFCs 6698 and 7671
-
-    \commentfrom{Robert Moskowitz}
-
-    \notes
-    - Are there privacy concerns because of client identity harvesting
-      in DANCE?
-    - do we need a better security consideration section description?
-
-    \suggestion{Mention this consideration in the secruity consideration}
-
-*** X.509 certificates should be a MUST
-
-    \commentfrom{Michael Richardson}
-
-    \notes
-    - Why is there an exception that allows for SHOULD when using
-      X.509 certificate
-
-    \suggestion{Change it to MUST}
-
-*** Nits
-
-    \commentfrom{Michael Richardson}
-
-    \notes
-    - Smaller wording suggestions and nits IRT DNSSEC validation,
-      distinction between TLS and DTLS, [_service] and device
-      notation, references for both RFCs and inactive drafts
-    - Message-ID: 763667.1668330590@dyas
-
-    \suggestion{Accept and act on the nits}
 
 #+TITLE:     DANCE Last Call(s) Discussion @ IETF-118
 #+AUTHOR:    Joey Salazar and Wes Hardaker
