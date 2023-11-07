@@ -1,16 +1,8 @@
 * Background
 
-*** Last Call Comments from *draft-ietf-dance-tls-clientid*
+*** Last Call Comments
 
-    *draft-ietf-dance-tls-clientid:*
-    - A number of comments received
-    - Some discussion on the list
-    - Mostly radio silence afterward
-
-*** Last Call Comments from *draft-ietf-dance-client-auth*
-
-    *draft-ietf-dance-client-auth:*
-    - A number of comments received
+    - A number of comments received on both
     - Some discussion on the list
     - Mostly radio silence afterward
 
@@ -45,6 +37,8 @@
     \suggestion{/or/ point to architecture document?}
     \suggestion{/or/ point to use-cases document?}
 
+    conclusion: ask for volunteers or drop if not needed
+
 *** Encoding the transport label
 
     \commentfrom{Michael Richardson}
@@ -55,6 +49,9 @@
     - the current draft already says the transport label is not needed
 
     \suggestion{leave as is}
+
+    conclusion: leave as is
+    the general document should not be that prescriptive
 
 *** clarity on the security considerations
 
@@ -67,6 +64,8 @@
 
     \suggestion{Mention this consideration in the secruity consideration}
 
+    conclusion: Bob to offer suggestive texts 
+
 *** X.509 certificates should be a MUST
 
     \commentfrom{Michael Richardson}
@@ -76,6 +75,13 @@
       X.509 certificate
 
     \suggestion{Change it to MUST}
+
+    conclusion: different modes in client authentication, but you
+    don't have to.  you can also use raw public key.
+
+    leave as is with extra text
+
+    shumon to see if further elaboration would be necessary
 
 *** Nits
 
@@ -88,6 +94,8 @@
     - Message-ID: 763667.1668330590@dyas
 
     \suggestion{Accept and act on the nits}
+
+    conclusion: accept suggested text
 
 * Last call comments about draft-ietf-dance-tls-clientid
 
@@ -108,6 +116,10 @@
 
     \suggestion{A reference to RFC6066 is not needed (TLS extensions)}
 
+    conclusion: accept this text
+    add some fuzzy text
+    mention "or other places to put extension in future protocol versions"
+
 *** Request for clarity on the ClientName limit definition
 
     \commentfrom{Rick van Rein and Michael Richardson}
@@ -126,6 +138,11 @@
 
     \suggestion{ensure the text properly shows the difference between the TLS length required vs the DANE request length required.}
 
+    conclusion: mark and shumon will work on the right end length for
+    255 issue
+
+    Talk with ekr or someone about a better way to write an empty presentation syntax
+
 *** Use stiffer requirements
 
     \commentfrom{Rick van Rein and Michael Richardson}
@@ -138,6 +155,11 @@
 
     \suggestion{SHOULD -> MUST}
 
+    conclusion: it's a SHOULD because of mixed-mode cases or where it
+    may not be wise to deploy it operationally
+
+    Add a sentence why it's a SHOULD
+
 *** The draft SHOULD say what RR content it expects
 
     \commentfrom{Robert Moskowitz}
@@ -148,14 +170,20 @@
 
     \suggestion{drop this suggestion as it adds more strictness than is necessary.  Disagreement about whether or not this should go into this document vs a more specific one if needed.}
     
+    conclusion: leave as is -- application specific profiles might
+    make it more strict    
+
 *** Use case for mixed environments in terms of certificate_authorities
 
     \commentfrom{Rick van Rein?}
 
     \notes
     - Use case for mixed environments in terms of certificate_authorities
+    - likely in the context of an ownership change
 
     \suggestion{???}
+
+    conclusion: need more information about mixed environments
 
 #+TITLE:     DANCE Last Call(s) Discussion @ IETF-118
 #+AUTHOR:    Joey Salazar and Wes Hardaker
@@ -184,5 +212,4 @@
 #+latex_header: \newcommand{\commentfrom}[1]{\textbf{Comment From:} #1}
 #+latex_header: \newcommand{\notes}{\vspace*{1em}\textbf{Notes:}}
 #+latex_header: \newcommand{\suggestion}[1]{\vspace*{1em}\textbf{Suggestion:} {#1}\\}
-#+BEAMER_HEADER: \setbeamertemplate{navigation symbols}{???}
 
