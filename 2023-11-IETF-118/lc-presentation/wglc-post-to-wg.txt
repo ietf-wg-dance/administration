@@ -1,0 +1,191 @@
+Last call comment discussion: draft-ietf-dance-client-auth
+============================================================
+
+2.2 Examples needed
+~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Rick van Rein
+
+  - could use examples for:
+    - domain names
+    - wildcards and DANE-TA
+  
+  Potential: Volunteer needed to add an easy example
+  Potential: /or/ point to architecture document?
+  Potential: /or/ point to use-cases document?
+
+  Conclusion at IETF-118: ask for text volunteers or drop if no volunteers
+
+
+2.3 Encoding the transport label
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Michael Richardson
+
+  LC comment notes:
+  - The transport label encoding may not be needed,
+  - both TLS and DTLS are functionally dual-usable already
+  - the current draft already says the transport label is not needed
+
+  Potential: leave as is
+
+  Conclusion at IETF-118: leave as is the general document should not
+  be that prescriptive
+
+
+2.4 clarity on the security considerations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Robert Moskowitz
+
+  LC comment notes:
+  - Are there privacy concerns because of client identity harvesting in
+    DANCE?
+  - do we need a better security consideration section description?
+
+  Potential: Mention this consideration in the secruity consideration
+
+  Conclusion at IETF-118: Bob to offer suggestive texts
+
+
+2.5 X.509 certificates should be a MUST
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Michael Richardson
+
+  LC comment notes:
+  - Why is there an exception that allows for SHOULD when using X.509
+    certificate
+
+  Potential: Change it to MUST
+
+  Conclusion at IETF-118: different modes in client authentication,
+  but you don't have to.  You can also use raw public key.
+
+  result: leave as is with extra text explaining why
+
+  Shumon to see if further elaboration would be helpful/necessary
+
+
+2.6 Nits
+~~~~~~~~
+
+  Comment from: Michael Richardson
+
+  LC comment notes:
+  - Smaller wording suggestions and nits IRT DNSSEC validation,
+    distinction between TLS and DTLS, [_service] and device notation,
+    references for both RFCs and inactive drafts
+  - Message-ID: 763667.1668330590@dyas
+
+  Potential: Accept and act on the nits
+
+  Conclusion at IETF-118: accept suggested text from Michael
+
+
+3 Last call comments about draft-ietf-dance-tls-clientid
+========================================================
+
+3.2 Needs a check regarding the supported TLS version
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Michael Richardson
+
+
+  LC comment notes:
+  - We have a reference to TLS 1.2 and 1.3 and DTLS 1.3
+  - We have a reference to RFC8446 (framing extension)
+
+  Potential: This extension supports both TLS 1.2 [RFC5246] and TLS 1.3
+  [RFC8446], and future TLS versions.  DTLS [RFC6347] is also
+  supported. The term TLS in this document is used generically to
+  describe all protocols.
+
+  Potential: A reference to RFC6066 is not needed (TLS extensions)
+
+  Conclusion at IETF-118: accept this suggested text from the chairs
+  above add additional fuzzy text mentioning that future versions of
+  the TLS protocol may require extensions be put in other places
+  within TLS initialization messages.
+
+  Conclusion: reference is not needed
+
+
+3.3 Request for clarity on the ClientName limit definition
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Rick van Rein and Michael Richardson
+
+  LC comment notes:
+  - dane_clientid extensions defined as <1..255>
+  - TLS encodes names as ascii
+  - DNS encodes them as 255 character limit names
+    - (with a trailing dot/null indicating the root zone)
+
+  The decode_error alert and a closedown of the connection when using
+  empty dane_clientid extensions defined as <1..255>
+
+  - We require ClientName to be non-empty
+  - Do we ever need to require an extension with a zero-length
+    ClientName?
+
+  Potential: ensure the text properly shows the difference between the
+  TLS length required vs the DANE request length required.
+
+  Conclusion at IETF-118: Mark and Shumon will work on the right end
+  length for 255 issue, likely extending the potential length to 1024.
+
+  Also: Shumon needs to talk with EKR or someone about a better way to
+  write an empty presentation syntax for TLS extensions.
+
+
+3.4 Use stiffer requirements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Rick van Rein and Michael Richardson
+
+  LC comment notes:
+  - More stiff requirements suggested in order to improve
+    interoperability and reduce code complexity
+  - "When using X.509 certificate authentication, it SHOULD send this
+    extension."
+
+  Potential: SHOULD -> MUST
+
+  Conclusion at IETF-118: it's a SHOULD because of mixed-mode cases or
+  where it may not be wise to deploy it operationally
+
+  Also: Add a sentence explaining why it's a SHOULD
+
+
+3.5 The draft SHOULD say what RR content it expects
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Robert Moskowitz
+
+  LC comment notes:
+  + Interpretation: DANE has multiple usage/etc models now, should we
+    specify which are usable in this context?
+
+  Potential: drop this suggestion as it adds more strictness than is
+  necessary.  Disagreement about whether or not this should go into this
+  document vs a more specific one if needed.
+
+  Conclusion at IETF-118: leave as is -- future application specific
+  profiles might make it more strict, but the strictness is not needed
+  in the base document.
+
+
+3.6 Use case for mixed environments in terms of certificate_authorities
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Comment from: Rick van Rein?
+
+  LC comment notes:
+  - Use case for mixed environments in terms of certificate_authorities
+  - likely in the context of an ownership change
+
+  Potential: ???
+
+  Conclusion at IETF-118: need more information about mixed
+  environments before a concrete suggestion could be made.
