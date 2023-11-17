@@ -6,6 +6,9 @@ DANCE chairs would like the WG participants to please review the
 conclusions reached and to speak up if there are any participants that
 disagree with the proposed paths forward for the issues.
 
+The youtube video of the session can be found here for those that wish
+to watch it: https://www.youtube.com/watch?v=HDKFZAkOyW4
+
 Last call comment discussion: draft-ietf-dance-client-auth
 ============================================================
 
