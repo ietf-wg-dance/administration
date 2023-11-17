@@ -1,7 +1,7 @@
 Last call comment discussion: draft-ietf-dance-client-auth
 ============================================================
 
-2.2 Examples needed
+Issue: Examples needed
 ~~~~~~~~~~~~~~~~~~~
 
   Comment from: Rick van Rein
@@ -17,7 +17,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Conclusion at IETF-118: ask for text volunteers or drop if no volunteers
 
 
-2.3 Encoding the transport label
+Issue: Encoding the transport label
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Michael Richardson
@@ -33,7 +33,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   be that prescriptive
 
 
-2.4 clarity on the security considerations
+Issue: clarity on the security considerations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Robert Moskowitz
@@ -48,7 +48,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Conclusion at IETF-118: Bob to offer suggestive texts
 
 
-2.5 X.509 certificates should be a MUST
+Issue: X.509 certificates should be a MUST
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Michael Richardson
@@ -67,7 +67,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Shumon to see if further elaboration would be helpful/necessary
 
 
-2.6 Nits
+Issue: Nits
 ~~~~~~~~
 
   Comment from: Michael Richardson
@@ -83,10 +83,10 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Conclusion at IETF-118: accept suggested text from Michael
 
 
-3 Last call comments about draft-ietf-dance-tls-clientid
+Last call comments about draft-ietf-dance-tls-clientid
 ========================================================
 
-3.2 Needs a check regarding the supported TLS version
+Issue: Needs a check regarding the supported TLS version
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Michael Richardson
@@ -111,7 +111,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Conclusion: reference is not needed
 
 
-3.3 Request for clarity on the ClientName limit definition
+Issue: Request for clarity on the ClientName limit definition
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Rick van Rein and Michael Richardson
@@ -139,7 +139,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   write an empty presentation syntax for TLS extensions.
 
 
-3.4 Use stiffer requirements
+Issue: Use stiffer requirements
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Rick van Rein and Michael Richardson
@@ -158,7 +158,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   Also: Add a sentence explaining why it's a SHOULD
 
 
-3.5 The draft SHOULD say what RR content it expects
+Issue: The draft SHOULD say what RR content it expects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Robert Moskowitz
@@ -176,7 +176,7 @@ Last call comment discussion: draft-ietf-dance-client-auth
   in the base document.
 
 
-3.6 Use case for mixed environments in terms of certificate_authorities
+Issue: Use case for mixed environments in terms of certificate_authorities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
   Comment from: Rick van Rein?
