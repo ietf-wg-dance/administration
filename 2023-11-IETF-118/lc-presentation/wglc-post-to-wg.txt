@@ -1,3 +1,11 @@
+DANCE met at IETF-118 and discussed the remaining last call issues
+with respect to the draft-ietf-dance-client-auth and
+draft-ietf-dance-tls-clientid documents.  Below is a summary of the
+issues, and the path forward as agreed to during the WG meeting.  The
+DANCE chairs would like the WG participants to please review the
+conclusions reached and to speak up if there are any participants that
+disagree with the proposed paths forward for the issues.
+
 Last call comment discussion: draft-ietf-dance-client-auth
 ============================================================
 
