@@ -54,7 +54,7 @@ Issue: clarity on the security considerations
     DANCE?
   - do we need a better security consideration section description?
 
-  Potential: Mention this consideration in the secruity consideration
+  Potential: Mention this consideration in the security consideration
 
   Conclusion at IETF-118: Bob to offer suggestive texts
 
@@ -115,7 +115,7 @@ Issue: Needs a check regarding the supported TLS version
   Potential: A reference to RFC6066 is not needed (TLS extensions)
 
   Conclusion at IETF-118: accept this suggested text from the chairs
-  above add additional fuzzy text mentioning that future versions of
+  above, add additional fuzzy text mentioning that future versions of
   the TLS protocol may require extensions be put in other places
   within TLS initialization messages.
 
